@@ -1,8 +1,7 @@
-# Maoyan Movie Ticketing System
+# movie-ticketing-system
 
-一个前后端分离的仿猫眼电影票务系统，重点实现电影浏览、影院/场次查询、选座锁座、下单、支付、想看计数，以及高并发抢票场景下的限流、防超卖和库存一致性方案。
+一个前后端分离的电影票务系统，重点实现电影浏览、影院/场次查询、选座锁座、下单、支付、想看计数，以及高并发抢票场景下的限流、防超卖和库存一致性方案。
 
-> 本项目仅用于学习和面试展示，和猫眼官方无关。
 
 ## 项目亮点
 
@@ -27,7 +26,7 @@
 ## 目录结构
 
 ```text
-maoyan
+movie-ticketing-system
 ├── backend/                 # Spring Boot 多模块后端
 │   ├── common/              # 公共常量、工具、JWT
 │   ├── domain/              # DTO/VO/PO/事件对象
@@ -132,10 +131,6 @@ http://localhost
   -> 超时未支付，定时任务取消订单并回滚库存
 ```
 
-更详细的面试版流程说明见：
-
-- [猫眼项目完整流程详解-面试版.md](./猫眼项目完整流程详解-面试版.md)
-- [PROJECT_DOCUMENTATION.md](./PROJECT_DOCUMENTATION.md)
 
 ## 关键一致性设计
 
